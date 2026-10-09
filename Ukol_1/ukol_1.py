@@ -4,7 +4,7 @@
 Vyplňte těla jednotlivých funkcí podle zadání v komentářích a v README.md.
 Neměňte názvy funkcí ani jejich parametry.
 """
-
+#finalin verze
 
 def vypocet_bmi(vaha_kg: float, vyska_m: float) -> float:
     """
