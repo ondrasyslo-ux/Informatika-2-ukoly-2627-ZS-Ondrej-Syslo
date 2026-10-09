@@ -15,13 +15,12 @@ def vypocet_bmi(vaha_kg: float, vyska_m: float) -> float:
     Pokud je váha <= 0 nebo výška <= 0, vraťte 0.0.
     """
     BMI = 0.0
+    if vaha_kg <= 0 or vyska_m <= 0:
+        return 0.0
     BMI = vaha_kg / (vyska_m ** 2)
     
-    
-    if vaha_kg <= 0 or vyska_m <= 0:
-        BMI = 0.0
-    BMI = round(BMI, 2)
-    return BMI
+    vysledek = round(BMI, 2)
+    return vysledek
 
 
 def kategorie_bmi(bmi: float) -> str:
